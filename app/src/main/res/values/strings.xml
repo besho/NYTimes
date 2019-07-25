@@ -1,4 +1,10 @@
 <resources>
-    <string name="app_name">NyTimes</string>
-    <string name="title_item_detail">Item Detail</string>
+
+    <string name="app_name">NY Times Most Popular</string>
+    <string name="article_details">Article Details</string>
+    <string name="no_connection">No Internet connection!</string>
+
+    <string name="reload_error">Something went wrong…!</string>
+    <string name="retry">Refresh</string>
+
 </resources>

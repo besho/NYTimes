@@ -7,10 +7,9 @@
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
     android:baselineAligned="false"
-    android:divider="?android:attr/dividerHorizontal"
+    android:divider="?attr/dividerHorizontal"
     android:orientation="horizontal"
-    android:showDividers="middle"
-    tools:context=".ItemListActivity">
+    android:showDividers="middle">
 
     <!--
     This layout is a two-pane layout for the Items
@@ -18,17 +17,14 @@
     
     -->
 
-    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/item_list"
-        android:name="app.demo.nytimes.ItemListFragment"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_articles"
         android:layout_width="@dimen/item_width"
         android:layout_height="match_parent"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         app:layoutManager="LinearLayoutManager"
-        tools:context="app.demo.nytimes.ItemListActivity"
-        tools:listitem="@layout/item_list_content" />
+        tools:listitem="@layout/row_article" />
 
     <FrameLayout
         android:id="@+id/item_detail_container"
